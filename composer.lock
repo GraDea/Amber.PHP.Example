@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a47b69a2eab7b12e40c24e835cd07c4d",
+    "content-hash": "1c2a56d37b95913718cd7c13ebbd7ba8",
     "packages": [
         {
             "name": "amber-soft/php.sdk",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GraDea/Amber.SDK.git",
-                "reference": "029c1854c89a5dd5fcc0c0ca4a5843c75ae1987e"
+                "reference": "244f4f12ed4b40a6a838bbf6b4fb824dec94b2cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GraDea/Amber.SDK/zipball/029c1854c89a5dd5fcc0c0ca4a5843c75ae1987e",
-                "reference": "029c1854c89a5dd5fcc0c0ca4a5843c75ae1987e",
+                "url": "https://api.github.com/repos/GraDea/Amber.SDK/zipball/244f4f12ed4b40a6a838bbf6b4fb824dec94b2cd",
+                "reference": "244f4f12ed4b40a6a838bbf6b4fb824dec94b2cd",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                 }
             ],
             "description": "SDK to REST API",
-            "time": "2017-09-13T13:02:19+00:00"
+            "time": "2017-09-15T12:46:35+00:00"
         },
         {
             "name": "gregwar/cache",

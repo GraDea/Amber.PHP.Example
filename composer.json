@@ -10,6 +10,6 @@
     }
   ],
   "require": {
-    "amber-soft/php.sdk": "^1.0"
+    "amber-soft/php.sdk": "^1.0.0"
   }
 }

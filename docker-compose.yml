@@ -1,0 +1,10 @@
+php:
+  build: .
+  privileged: true
+  ports:
+    - "8080:80"
+
+  volumes:
+    - ./www:/app
+    - ./config:/config
+    - ./vendor:/vendor
