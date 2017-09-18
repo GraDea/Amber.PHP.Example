@@ -2,7 +2,6 @@
 
 
 require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/../src/Client/AppClient.php';
 $config = require __DIR__ . '/../config/config.php';
 
 $endpoint = $config['base_uri'] . $config['endpoint'];
@@ -19,5 +18,5 @@ $cache = new \Gregwar\Cache\Cache();
 //
 //var_dump($lead);
 
-//$leads = $client->getObjects("BaseLead");
-//var_dump($leads);
+$leads = $client->getObjects("BaseLead");
+var_dump($leads);
