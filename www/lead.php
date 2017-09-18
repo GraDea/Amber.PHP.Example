@@ -16,7 +16,11 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) === 'POST') {
 
     $data = ['Name' => $name, 'Phone' => $phone];
 
-    $client->updateObject('BaseLead', $id, $data);
+    if (empty($id)) {
+        $id = $client->saveObject('BaseLead', $data);
+    } else {
+        $client->updateObject('BaseLead', $id, $data);
+    }
 
     $query = "?id={$id}";
     header("Location: " . $_SERVER['REQUEST_URI'] . $query);
@@ -24,9 +28,23 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) === 'POST') {
 }
 
 $str = $_SERVER['QUERY_STRING'];
-parse_str($str, $output);
-$id = $output['id'];
-$item = $client->getObject('BaseLead', $id);
+if(!empty($str)){
+    parse_str($str, $output);
+    $id = $output['id'];
+}
+
+if(empty($id)){
+    $item = new stdClass();
+    $item->Id = 0;
+    $item->Name="";
+    $item->Phone="";
+
+    $title = "Create new";
+} else{
+    $item = $client->getObject('BaseLead', $id);
+
+    $title = htmlspecialchars($item->Id);
+}
 
 ?>
 <html>
@@ -43,7 +61,7 @@ $item = $client->getObject('BaseLead', $id);
         <form method="post" action="lead.php">
             <div class="form_description">
                 <h2>
-                    <?php echo $item->Id ?>
+                    <?php echo $title ?>
                 </h2>
 
             </div>
