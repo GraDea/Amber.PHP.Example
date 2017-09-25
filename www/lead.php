@@ -17,6 +17,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) === 'POST') {
     $data = ['Name' => $name, 'Phone' => $phone];
 
     if (empty($id)) {
+        $data["Status"] = 118;
         $id = $client->saveObject('BaseLead', $data);
     } else {
         $client->updateObject('BaseLead', $id, $data);

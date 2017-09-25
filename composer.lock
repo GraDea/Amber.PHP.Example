@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "amber-soft/php.sdk",
-            "version": "1.0.1",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GraDea/Amber.SDK.git",
-                "reference": "244f4f12ed4b40a6a838bbf6b4fb824dec94b2cd"
+                "reference": "bfbc4284777a5817cac7508ee2abf45a2adce230"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GraDea/Amber.SDK/zipball/244f4f12ed4b40a6a838bbf6b4fb824dec94b2cd",
-                "reference": "244f4f12ed4b40a6a838bbf6b4fb824dec94b2cd",
+                "url": "https://api.github.com/repos/GraDea/Amber.SDK/zipball/bfbc4284777a5817cac7508ee2abf45a2adce230",
+                "reference": "bfbc4284777a5817cac7508ee2abf45a2adce230",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                 }
             ],
             "description": "SDK to REST API",
-            "time": "2017-09-15T12:46:35+00:00"
+            "time": "2017-09-25T06:20:04+00:00"
         },
         {
             "name": "gregwar/cache",
